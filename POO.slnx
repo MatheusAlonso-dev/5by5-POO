@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="01 - carros/01 - carros.csproj" />
   <Project Path="02-contaBancaria/02-contaBancaria.csproj" Id="1ae7d77a-a8de-4e19-af8c-91833ecea342" />
+  <Project Path="03-livros/03-livros.csproj" Id="f0d789ae-1d8d-4b15-a7c6-82c20123d8fe" />
   <Project Path="POO/POO.csproj" />
 </Solution>
