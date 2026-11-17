@@ -34,7 +34,7 @@
 
         public void ExibirSaldo()
         {
-            Console.WriteLine($"\nSaldo atual: {GetSaldo()}");
+            Console.WriteLine($"Saldo atual: {GetSaldo().ToString("F2")}");
         }
         public override string ToString()
         {
