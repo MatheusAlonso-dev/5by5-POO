@@ -1,5 +1,7 @@
 ﻿
-internal class ContaPoupanca : ContaBancaria
+using System.ComponentModel;
+
+public class ContaPoupanca : ContaBancaria
 {
     public ContaPoupanca(int num) : base(num) { }
     public override bool Sacar(float valor)
@@ -11,6 +13,15 @@ internal class ContaPoupanca : ContaBancaria
         }
         else
             return false;
+    }
+
+    public override string ToString()
+    {
+        return $"""
+            Numero da conta: {Numero}
+            Tipo de conta: Poupança
+            Saldo atual: {Saldo}
+            """;
     }
 
 }

@@ -42,5 +42,56 @@ public abstract class ContaBancaria
         else
             return false;
     }
+
+    public virtual bool Transferir(ContaCorrente contaCorrente, float valor)
+    {
+        if (valor <= Saldo)
+        {
+            
+            if (contaCorrente.Depositar(valor))
+            {
+                Saldo -= valor;
+                return true;
+            }
+            else
+                return false;
+        }
+        else
+            return false;
+    }
+
+    public virtual bool Transferir(ContaPoupanca contaPoupanca, float valor)
+    {
+        if (valor <= Saldo)
+        {
+
+            if (contaPoupanca.Depositar(valor))
+            {
+                Saldo -= valor;
+                return true;
+            }
+            else
+                return false;
+        }
+        else
+            return false;
+    }
+
+    public virtual bool Transferir(ContaSalario contaSalario, float valor)
+    {
+        if (valor <= Saldo)
+        {
+
+            if (contaSalario.Depositar(valor))
+            {
+                Saldo -= valor;
+                return true;
+            }
+            else
+                return false;
+        }
+        else
+            return false;
+    }
 }
     

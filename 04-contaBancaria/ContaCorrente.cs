@@ -60,6 +60,7 @@ public class ContaCorrente : ContaBancaria
     {
         return $"""
             Numero da conta: {Numero}
+            Tipo de conta: Corrente
             Saldo atual: {Saldo}
             Limite: {Limite}
             """;
